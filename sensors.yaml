@@ -1,0 +1,74 @@
+    # lunch måndag
+- platform: scrape
+  resource: https://mpi.mashie.com/public/menu/V%C3%A4xj%C3%B6%20kommun%20ny/6f5fa240?country=se
+  name: BarnNamn lunch 1 måndag
+  select: .day-alternative
+  index: 0
+  value_template: '{{ value | replace ("Lunch 1", "") }}'
+
+- platform: scrape
+  resource: https://mpi.mashie.com/public/menu/V%C3%A4xj%C3%B6%20kommun%20ny/6f5fa240?country=se
+  name: BarnNamn lunch 2 måndag
+  select: .day-alternative
+  index: 1
+  value_template: '{{ value | replace ("Lunch 2", "") }}'
+
+    # lunch tisdag
+- platform: scrape
+  resource: https://mpi.mashie.com/public/menu/V%C3%A4xj%C3%B6%20kommun%20ny/6f5fa240?country=se
+  name: BarnNamn lunch 1 tisdag
+  select: .day-alternative
+  index: 2
+  value_template: '{{ value | replace ("Lunch 1", "") }}'
+
+- platform: scrape
+  resource: https://mpi.mashie.com/public/menu/V%C3%A4xj%C3%B6%20kommun%20ny/6f5fa240?country=se
+  name: BarnNamn lunch 2 tisdag
+  select: .day-alternative
+  index: 3
+  value_template: '{{ value | replace ("Lunch 2", "") }}'
+
+    # lunch onsdag
+- platform: scrape
+  resource: https://mpi.mashie.com/public/menu/V%C3%A4xj%C3%B6%20kommun%20ny/6f5fa240?country=se
+  name: BarnNamn lunch 1 onsdag
+  select: .day-alternative
+  index: 5
+  value_template: '{{ value | replace ("Lunch 1", "") }}'
+
+- platform: scrape
+  resource: https://mpi.mashie.com/public/menu/V%C3%A4xj%C3%B6%20kommun%20ny/6f5fa240?country=se
+  name: BarnNamn lunch 2 onsdag
+  select: .day-alternative
+  index: 6
+  value_template: '{{ value | replace ("Lunch 2", "") }}'
+
+    # lunch torsdag
+- platform: scrape
+  resource: https://mpi.mashie.com/public/menu/V%C3%A4xj%C3%B6%20kommun%20ny/6f5fa240?country=se
+  name: BarnNamn lunch 1 torsdag
+  select: .day-alternative
+  index: 7
+  value_template: '{{ value | replace ("Lunch 1", "") }}'
+
+- platform: scrape
+  resource: https://mpi.mashie.com/public/menu/V%C3%A4xj%C3%B6%20kommun%20ny/6f5fa240?country=se
+  name: BarnNamn lunch 2 torsdag
+  select: .day-alternative
+  index: 8
+  value_template: '{{ value | replace ("Lunch 2", "") }}'
+
+    # lunch fredag
+- platform: scrape
+  resource: https://mpi.mashie.com/public/menu/V%C3%A4xj%C3%B6%20kommun%20ny/6f5fa240?country=se
+  name: BarnNamn lunch 1 fredag
+  select: .day-alternative
+  index: 9
+  value_template: '{{ value | replace ("Lunch 1", "") }}'
+
+- platform: scrape
+  resource: https://mpi.mashie.com/public/menu/V%C3%A4xj%C3%B6%20kommun%20ny/6f5fa240?country=se
+  name: BarnNamn lunch 2 fredag
+  select: .day-alternative
+  index: 10
+  value_template: '{{ value | replace ("Lunch 2", "") }}'
